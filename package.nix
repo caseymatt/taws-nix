@@ -18,7 +18,7 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "taws";
-  version = "1.1.2";
+  version = "1.1.1";
 
   src = fetchFromGitHub {
     owner = "huseyinbabal";
