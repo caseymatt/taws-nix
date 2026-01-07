@@ -8,10 +8,10 @@ Always up-to-date Nix package for [taws](https://github.com/huseyinbabal/taws) -
 
 ```bash
 # Run directly without installing
-nix run github:YOUR_USERNAME/taws-nix
+nix run github:caseymatt/taws-nix
 
 # Install to your profile
-nix profile install github:YOUR_USERNAME/taws-nix
+nix profile install github:caseymatt/taws-nix
 ```
 
 ## Installation
@@ -24,7 +24,7 @@ Add to your `flake.nix`:
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    taws.url = "github:YOUR_USERNAME/taws-nix";
+    taws.url = "github:caseymatt/taws-nix";
   };
 
   outputs = { self, nixpkgs, taws, ... }: {
@@ -48,7 +48,7 @@ Add to your `flake.nix`:
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     home-manager.url = "github:nix-community/home-manager";
-    taws.url = "github:YOUR_USERNAME/taws-nix";
+    taws.url = "github:caseymatt/taws-nix";
   };
 
   outputs = { self, nixpkgs, home-manager, taws, ... }: {
@@ -87,13 +87,13 @@ Pin to specific taws versions using git refs:
 {
   inputs = {
     # Always latest
-    taws.url = "github:YOUR_USERNAME/taws-nix";
+    taws.url = "github:caseymatt/taws-nix";
 
     # Pin to exact version
-    taws.url = "github:YOUR_USERNAME/taws-nix?ref=v1.1.2";
+    taws.url = "github:caseymatt/taws-nix?ref=v1.1.2";
 
     # Track major version
-    taws.url = "github:YOUR_USERNAME/taws-nix?ref=v1";
+    taws.url = "github:caseymatt/taws-nix?ref=v1";
   };
 }
 ```
@@ -102,7 +102,7 @@ Pin to specific taws versions using git refs:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/taws-nix
+git clone https://github.com/caseymatt/taws-nix
 cd taws-nix
 
 # Build
